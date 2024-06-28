@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>NITM Web Design</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lato:ital,wght@0,400;1,400;1,900&family=Poppins:wght@300&display=swap"
+            rel="stylesheet"> 
+        <link rel="stylesheet" href="/CSS/style.css">
+        <link rel="stylesheet" href="/CSS/style_mission.css"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    
+    </head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"> <img src="/IMAGE/Capture_LOGO.png" alt="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                   <li><a href="index.html">HOME</a></li>
+                   <li><a href="aboutus.html">ABOUT US</a></li>
+                   <li><a href="course.html">COURSE</a></li>
+                   <li><a href="gallary.html">GALLARY</a></li>
+                   <li><a href="blog.html">BLOG</a></li>
+                   <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+           <h1> One Of The Best Institute in North-East Region.</h1>
+           <p>Nirmala is one of the finest institute in North-East Region & has created a unique position. <br> It focused on technical, IT & industrial training for building career. <br>
+            <a href="#" class="hero-btn">Visit Us to Know More</a>
+
+        </div>
+    </section>
+
+    <!-----mission----->
+
+    <section class="mission-msg">
+
+        <h1>Mission & Vision</h1>
+
+        <div class="row">
+            <div class="mission-col">
+                <img src="/IMAGE/mission.jpg">
+                <p>Nirmala’s mission is to expand a fully developed network of training Institutes in the rural areas of the Country & abroad as well. And, thus to provide all opportunities to Technical & Non-Technical students to attain self-reliance & economic liberty.</p>
+            </div>
+            <div class="mission-col">
+                <img src="/IMAGE/vision.jpg">
+                <p>“Strict Quality Control measures at every stage” ensure that appropriate and up-to-date computer training inputs are given to the students. Nirmala adheres strictly to the two-student one computer norm so that every student receives full value for his / her money.</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!----Footer---->
+
+    
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Nirmala is one of the finest institute in North-East Region & has created a unique position. <br> It focused
+            on technical, IT & industrial training for building career.</p>
+        <div class="icons">
+            <a href="https://www.facebook.com/nirmalainfosystem">
+                <i class="fa-brands fa-facebook"></i></a>
+                <a href="https://twitter.com/">
+                    <i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.linkedin.com/company/nirmala-infosystem">
+                        <i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/nirmala_infosystem/">
+                            <i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <p>Made with <i class="fa fa-heart-o"></i> by Nirmala Infosystem</p>
+
+    </section>
+
+    <!------------JavaScript for toggle menu-------------->
+    <script>
+        var navLinks=document.getElementById("navLinks")
+        function showMenu(){
+            navLinks.style.right ="0"
+        }
+        function hideMenu(){
+            navLinks.style.right ="-200px"
+        }
+    </script>
+</body>
+</html>

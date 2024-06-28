@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>NITM Web Design</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lato:ital,wght@0,400;1,400;1,900&family=Poppins:wght@300&display=swap"
+            rel="stylesheet"> 
+        <link rel="stylesheet" href="/CSS/style.css"> 
+        <link rel="stylesheet" href="/CSS/style_contact.css">
+    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    
+    </head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"> <img src="/IMAGE/Capture_LOGO.png" alt="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                   <li><a href="index.html">HOME</a></li>
+                   <li><a href="aboutus.html">ABOUT US</a></li>
+                   <li><a href="course.html">COURSE</a></li>
+                   <li><a href="gallary.html">GALLARY</a></li>
+                   <li><a href="blog.html">BLOG</a></li>
+                   <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        
+    </section>
+
+    <!-------Contact--->
+<section class="contact">
+    <div class="content">
+        <h2>Contact Us</h2>
+        <p> Let's Start a Conversation</p>
+    </div>
+    <div class="container">
+        <div class="contactInfo">
+            <div class="box">
+                <div class="icon"><i class="fa fa-map-marker"></i></div>
+                    <div class="text">
+                        <h3>Address</h3>
+                        <p> A-703/07, <br> Panchwati Green, <br> Noida-Express Way, UP</p>
+                    </div>
+                
+            </div>
+            <div class="box">
+                <div class="icon"><i class="fa fa-mobile"></i></div>
+                    <div class="text">
+                        <h3>Contact No.-</h3>
+                        <p> +91-88-092-99-068</p>
+                    </div>
+                
+            </div>
+            <div class="box">
+                <div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i> </div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p>enquiry@nimala.com</p>
+                    </div>
+               
+            </div>
+         
+        </div>
+      
+        <div class="contactForm">
+            <form>
+                <h2>Send Message</h2>
+                <div class="inputBox">
+                    <input type="text" name="" placeholder="Full Name" required="required">
+                    
+                </div>
+                <div class="inputBox">
+                    <input type="text" name="" placeholder="abc@xyz.com" required="required">
+                    
+                </div>
+                <div class="inputBox">
+                  <textarea required="required" placeholder="Type Your Message...."></textarea>
+                    
+                </div>
+                <div class="inputBox">
+                   <input type="submit" class="btn" onclick="openPopup()" name="" value="Send">
+                </div>
+                <div class="popup" id="popup">
+                    <img src="/IMAGE/ok-1976099_640.png" width="200px">
+                    <h2>Thank You!</h2>
+                    <p>Your details has been successfully submitted. Thanks!</p>
+                    <button type="button" onclick="closePopup()">OK</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+</section>
+
+<!----- MAP--->
+<section class="map">
+    <div class="box">
+            <div class="text">
+              
+                <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3506.31950248408!2d77.40334077270334!3d28.500033522114524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce856f847b8c1%3A0x9cfac8756dec96da!2sNoida-Greater%20Noida%20Expy%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1695189127595!5m2!1sen!2sin" width="800" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+            </div>
+       
+    </div>
+
+</section>
+
+    <!----Footer---->
+
+   
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Nirmala is one of the finest institute in North-East Region & has created a unique position. <br> It focused
+            on technical, IT & industrial training for building career.</p>
+        <div class="icons">
+            <a href="https://www.facebook.com/nirmalainfosystem">
+                <i class="fa-brands fa-facebook"></i></a>
+                <a href="https://twitter.com/">
+                    <i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.linkedin.com/company/nirmala-infosystem">
+                        <i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/nirmala_infosystem/">
+                            <i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <p>Made with <i class="fa fa-heart-o"></i> by Nirmala Infosystem</p>
+
+    </section>
+
+
+
+    <!------------JavaScript for toggle menu-------------->
+    <script>
+        var navLinks = document.getElementById("navLinks")
+        function showMenu() {
+            navLinks.style.right = "0"
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px"
+        }
+    </script>
+
+<script>
+    let popup =document.getElementById("popup");
+    function openPopup(){
+        popup.classList.add("open-popup") 
+    }
+    function closePopup(){
+        popup.classList.remove("open-popup") 
+    }
+
+
+</script>
+
+</body>
+
+</html>
